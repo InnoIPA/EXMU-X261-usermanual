@@ -20,7 +20,10 @@
   - [Programmable Logic (PL)](#programmable-logic-pl-1)
 - [Switchs on Carrier Board](#switchs-on-carrier-board)
   - [SW3 & SW6](#sw3--sw6)
+  - [SW4(LED)](#sw4led)
   - [SW5](#sw5)
+    - [SW5-1,2,4](#sw5-124)
+    - [SW5-3](#sw5-3)
   - [SW7](#sw7)
   - [SW8](#sw8)
 - [Jumpers on Carrier Board](#jumpers-on-carrier-board)
@@ -90,14 +93,20 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
 ## SW3 & SW6
 - Function : Hardware reset.
 
+## SW4(LED)
+- Function : Power button on when SW5-3 switch to ON.
+
 ## SW5
-- Function : IO voltage Level switch. Default off for 1.8V.
+### SW5-1,2,4
+- Function : IO voltage Level switch, default off for 1.8V.
+### SW5-3
+- Function : Power button on switch, default off for auto power on. 
 
 ## SW7
 - Function : CAN BUS Terminal resistor(120ohm) switch. SW7[1] for CAN0, SW7[2] for CAN1.
 
 ## SW8
-- Function : Boot Mode. Default Boot Mode is Quad-SPI (32b).
+- Function : Boot Mode selector, default Boot Mode is Quad-SPI (32b).
 
     Boot Mode | SW8 [1:4]
     ---|---
