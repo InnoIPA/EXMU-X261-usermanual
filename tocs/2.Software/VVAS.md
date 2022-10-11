@@ -7,8 +7,8 @@
 
 - [Overview](#overview)
 - [How to Install](#how-to-install)
-  - [Manually install](#manually-install)
   - [Install by RPM](#install-by-rpm)
+  - [Manually install](#manually-install)
 - [reference](#reference)
 
 # Overview
@@ -23,8 +23,14 @@ Following install process are using Vitis ai 1.4 and VVAS 1.0 for example. Chang
  2.0 | 1.1 
  2.5 | 2.0 
 
-If you are using customised BSP, there may have dependency issue. So we will suggest manually install rather than install by RPM(Red Hat Package Manager).
+## Install by RPM
+VVAS can be installed by using the prebuilt rpm package.  
+```
+rpm -ivh --force vvas-0.1-1.aarch64.rpm
+```
+
 ## Manually install
+If you are using customised BSP, there may have dependency issue. So we will suggest manually install rather than install by RPM(Red Hat Package Manager).
 - Preparation
     Petalinux sdk including Vitis ai, opencv (over 4.4), jansson.
     
@@ -60,10 +66,6 @@ If you are using customised BSP, there may have dependency issue. So we will sug
     cd /
     sudo tar -xvf ivas_installer.tar.gz
     ```
-## Install by RPM
-```
-rpm -ivh --force vvas-0.1-1.aarch64.rpm
-```
 
 # reference
 [Xilinx VVAS](https://www.xilinx.com/products/design-tools/vitis/vvas.html)  
