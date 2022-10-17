@@ -20,6 +20,7 @@ Copyright 2022 AIoT Dev. Dep., IPA
 - [See What's New](#see-whats-new)
 - [Introduction](#introduction)
 - [Table of contents](#table-of-contents)
+- [Dependency Versions](#dependency-versions)
 - [How to open an issue and sync repo on github?](#how-to-open-an-issue-and-sync-repo-on-github)
 - [License](#license)
    
@@ -44,6 +45,15 @@ We have created this repository to provide a quick and easy way to get started w
   <br />
   <div align="center"><img width="80%" height="50%" src="./EXMU-X261.png"></div>
   <br />
+
+# Dependency Versions
+The dpu-sc would not be preload in BSP.
+
+BSP | Vitis-AI | VVAS|stesting|
+|:---:| :---: | :---:|:---:|
+|0.0.3|1.4|1.0|0.0.1|
+
+
 
 # How to open an issue and sync repo on github?
 Issues are used for tracking ideas, feedback, tasks, and bugs. To assist you, here is a [guide](./docs/contributing/Readme.md) on how to open an issue and follow it. Additionally, the guide introduces how to sync from upstream repositories.
