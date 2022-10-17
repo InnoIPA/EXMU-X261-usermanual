@@ -38,7 +38,7 @@ We have created this repository to provide a quick and easy way to get started w
     - [stesting-sc](./tocs/2.Software/stesting-sc.md)
     - [VVAS](./tocs/2.Software/VVAS.md)
   - [POC](./tocs/3.POC/)
-    - [Defect Dection](./tocs/3.POC/Defect-Detection.md)
+    - [Defect Detection](./tocs/3.POC/Defect-Detection.md)
     - [VVAS Demo](./tocs/3.POC/VVAS-Demo.md)
   - [FAQ](./tocs/4.FAQ/FAQ.md)
 
