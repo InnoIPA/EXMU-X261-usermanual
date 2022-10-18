@@ -90,6 +90,7 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
 - I2C
 
 # Switchs on Carrier Board
+This section introduce the function of switchs which on [the baord](#carrier-board-overview).
 ## SW3 & SW6
 - Function : Hardware reset.
 
@@ -114,6 +115,7 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
     Quad-SPI (32b) | 1011
 
 # Jumpers on Carrier Board
+This section introduce the function of jumpers which on [the baord](#carrier-board-overview).
 ## Fan power
 - Function : 12V & GND.
 
