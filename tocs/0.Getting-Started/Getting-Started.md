@@ -20,11 +20,11 @@
 ![X261-som-board](fig/X261-som-board.png)  
 - X261-Carrier Board
 ![X261-carrier-board-all](fig/X261-carrier-board-all.png) 
-- (optional) A Debug Board: You can use it to communicate with the host through uart
+- (optional) A Debug Board: You can use it to communicate with the host through UART
 ![debug-board](fig/debug-board.jpg)
 - A Power Supply
 ![power-supply](fig/power.png)
-- A MicroSD Card: Please prepare a microSD card of 16GB or more  
+- A MicroSD Card: Please prepare a microSD card of 16GB or more.  
 ![microsd-card](fig/microsd-card.jpg)
 ## Software
 - OS Image(Ubuntu), you can contact james_chen@innodisk.com, then you can refer to the "Setting up the SD Card Image" section for first boot.
@@ -46,11 +46,11 @@ You will need a computer to prepare the system for use on X261. Here we will int
 # Connect your X261  
 1. Insert the microSD card containing the X261 image in the microSD card slot.  
 ![connect-01](fig/connect-01.png)  
-2. (optional) If you want to transfer x261 information via uart, please use debug board.  
+2. (optional) If you want to transfer x261 information via UART, please use debug board.  
 ![connect-02](fig/connect-02.png)  
 3. (optional) If you want to display X261 information through the screen, please plug in the HDMI cable.  
 ![connect-03](fig/connect-03.png)  
-4. Finally, system boot immediately after plugging in the Power Supply.  
+4. Finally, system boot immediately after plugging in the power supply.  
 ![connect-04](fig/connect-04.png)   
 # Booting your X261
 Please refer to [Xilinx Website](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/booting-your-starter-kit.html)
