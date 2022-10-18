@@ -20,7 +20,7 @@ xmutil loadapp <accelerate application name>
 
 
 # How to update the application on X261?
-ALL application support using RPM to upgrade.
+All application support using RPM to upgrade.
   
 # How to check the verion on EXMU-X261?
  - For BSP verion, using the following command to check. The BSP verion is `Ver.x.x.x`.
@@ -30,7 +30,7 @@ ALL application support using RPM to upgrade.
     ```
     ![bsp-verion](./fig/bsp-verion.png)
 
- - For vitis-AI verion, using the following command to check. The vitis-AI verion can be seen at `VAI Version`
+ - For Vitis-AI verion, using the following command to check. The Vitis-AI verion can be seen at `VAI Version`
     ```
     xdputil query
     ```
@@ -51,3 +51,6 @@ Please load DPU accelerate application. Double check accelerate application list
 xmutil loadapp <dpu accelerate application name>
 ```
 
+# What is BSP?
+A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
+![bsp-tree](./fig/bsp-tree.png)
