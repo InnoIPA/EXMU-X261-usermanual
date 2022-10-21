@@ -8,16 +8,14 @@
 - [SOM Board Overview](#som-board-overview)
 - [Devices on SOM](#devices-on-som)
   - [QSPI Flash](#qspi-flash)
-  - [EMMC](#emmc)
+  - [eMMC](#emmc)
   - [DDR4](#ddr4)
   - [TPM2.0 Security Module](#tpm20-security-module)
   - [SOC](#soc)
-    - [Processing System (PS)](#processing-system-ps)
-    - [Programmable Logic (PL)](#programmable-logic-pl)
 - [Carrier Board Overview](#carrier-board-overview)
 - [IO on Carrier Board](#io-on-carrier-board)
-  - [Processing System (PS)](#processing-system-ps-1)
-  - [Programmable Logic (PL)](#programmable-logic-pl-1)
+  - [Processing System (PS)](#processing-system-ps)
+  - [Programmable Logic (PL)](#programmable-logic-pl)
 - [Switchs on Carrier Board](#switchs-on-carrier-board)
   - [SW3 & SW6](#sw3--sw6)
   - [SW4(LED)](#sw4led)
@@ -45,9 +43,9 @@
 - Size : 512MB  
     Storage for boot firmware which file name is `BOOT.BIN`.
 
-## EMMC
+## eMMC
 - Size : 16GB  
-    Storage for Images, there should be two partition `boot` and `root` in EMMC.
+    Storage for Images, there should be two partition `boot` and `root` in eMMC.
 
 ## DDR4
 - Size : 4GB
@@ -60,14 +58,14 @@
 - Part Name :  xck26-sfvc784-2lv-c 
 - Zynq UltraScale+  
     This series FPGA are also called as `zynqmp`. It contain two main part:
-### Processing System (PS)
-- CPU CortexA53 * 4
-- GPU Mali400
-- IO (MIO)
-### Programmable Logic (PL)
-- Video codec (VCU)
-- Logic gates
-- IO (EMIO)
+- Processing System (PS)
+  - CPU CortexA53 * 4
+  - GPU Mali400
+  - IO (MIO)
+- Programmable Logic (PL)
+  - Video codec (VCU)
+  - Logic gates
+  - IO (EMIO)
 
 # Carrier Board Overview
 ![carrier_baord.png](fig/carrier_baord.png)
@@ -79,7 +77,7 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
 - USB
 - HDMI
 - SD Card
-- EMMC
+- eMMC
 - UART0
 - M.2 AKEY PCIE Gen2x1
 ## Programmable Logic (PL)
@@ -142,7 +140,7 @@ Debug Board include three main function:
 - Function : Main interactive interface for developer, it could be access by serial port utilities like minicom, putty, mobaxterm.
   
 ## JTAG
-JTAG wont work if EEPROM on debug board didn't contain correct info.
+JTAG won't work if EEPROM on debug board didn't contain correct info.
 - Function : JTAG for xilinx IDE.
 
 ## HDMI UART
