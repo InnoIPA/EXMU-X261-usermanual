@@ -16,8 +16,8 @@ VVAS(Vitis Video Analytics SDK) contains plugin developed by xilinx based on gst
 ![VVAS](fig/vvas.png)
 
 # How to Install
-Following install process are using Vitis ai 1.4 and VVAS 1.0 for example. Change the version of VVAS by table below, if using different vesion of Vitis ai.
- Vitis ai version | VVAS version
+Following install process are using Vitis AI 1.4 and VVAS 1.0 for example. Change the version of VVAS by table below, if using different vesion of Vitis AI.
+ Vitis AI version | VVAS version
  --- | --- 
  1.4 | 1.0 
  2.0 | 1.1 
@@ -32,21 +32,21 @@ rpm -ivh --force vvas-0.1-1.aarch64.rpm
 ## Manually install
 If you are using customised BSP, there may have dependency issue. So we will suggest manually install rather than install by RPM(Red Hat Package Manager).
 - Preparation
-    Petalinux sdk including Vitis ai, opencv (over 4.4), jansson.
+    Petalinux SDK including Vitis AI, opencv (over 4.4), jansson.
     
-1. Download source code which match to your Vitis ai version on x86 host.
+1. Download source code which match to your Vitis AI version on x86 host.
     
     ```bash
     git clone -b VVAS_REL_v1.0 https://github.com/Xilinx/VVAS.git
     ```
-2. Source petalinux sdk.
+2. Source petalinux SDK.
     
     ```bash
     unset LD_LIBRARY_PATH
-    source <path-to-sdk>/environment-setup-aarch64-xilinx-linux
+    source <path-to-SDK>/environment-setup-aarch64-xilinx-linux
     ```
     
-3. Build vvas on x86 host.
+3. Build VVAS on x86 host.
     
     ```bash
     chmod 755 build-ivas-essential.sh
@@ -60,7 +60,7 @@ If you are using customised BSP, there may have dependency issue. So we will sug
     scp ./install/ivas_installer.tar.gz petalinux@<IP>:/
     ```
     
-5. Install the vvas on k26.
+5. Install the VVAS on k26.
     
     ```bash
     cd /

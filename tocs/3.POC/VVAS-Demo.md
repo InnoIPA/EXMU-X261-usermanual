@@ -84,7 +84,7 @@ rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
     ./build.sh <path-to-sdk>
     ```
     ![vvas_smatrcam_build](fig/vvas_smatrcam_build.gif)
-    if shows error message as below:
+    If shows error message as below:
     ```
     ERROR: missing libcorrespondence.a
     ```
@@ -119,9 +119,9 @@ rpm -ivh --force vvas_demo-0.1-1.aarch64.rpm
     
     ```bash
     cd ~/demo
-    # basic vvas demo
+    # basic VVAS demo
     sudo ./run_demo_vvas.sh
-    # vvas demo including uvc camera with face detection
+    # VVAS demo including uvc camera with face detection
     sudo ./run_demo_vvas_cam.sh
     ```
     The console will hang at `New clock: ...` as below:
