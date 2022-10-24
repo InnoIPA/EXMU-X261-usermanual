@@ -57,9 +57,9 @@ A Board Support Package (BSP) is a collection of drivers customized to the provi
 
 # How to flash eMMC on X261?
 1. You need to prepare a MicroSD Card which can boot on X261, then use it to boot the system.  
-2. In U-Boot section, you can see the simple menu like below through debug board(UART), please select `Carrier Card (CC) boot device`.   
+2. In U-Boot section, you can see the simple menu like below through debug board(UART), please select `Carrier Card (CC) boot device` here.   
 ![u-boot-menu](./fig/u-boot-menu.png)  
-1. After booting, you can use follow below steps to flash the image which used to replace k26's eMMC, such like:  
+1. After booting, you can follow below steps to flash the image which used to replace k26's eMMC, such like:  
    ```bash  
    sudo umount /dev/mmcblk0p1
    sudo umount /dev/mmcblk0p2
