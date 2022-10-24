@@ -54,3 +54,16 @@ xmutil loadapp <dpu accelerate application name>
 # What is BSP?
 A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
 ![bsp-tree](./fig/bsp-tree.png)
+
+# How to flash eMMC on X261?
+1. You need to prepare a MicroSD Card which can boot on X261, then use it to boot the system.  
+2. In U-Boot section, you can see the simple menu like below through debug board(UART), please select `Carrier Card (CC) boot device`.   
+![u-boot-menu](./fig/u-boot-menu.png)  
+1. After booting, you can use follow below steps to flash the image which used to replace k26's eMMC, such like:  
+   ```bash  
+   sudo umount /dev/mmcblk0p1
+   sudo umount /dev/mmcblk0p2
+   echo -e "d\n\nd\n\nd\n\nw\n" | sudo fdisk /dev/mmcblk0
+   sudo dd if=<reflash-image> of=/dev/mmcblk0 bs=1M status=progress 
+   ```
+2. Finnaly, after `reboot` then you can see the new system which you flashed.
