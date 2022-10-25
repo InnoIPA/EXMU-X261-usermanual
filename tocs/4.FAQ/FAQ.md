@@ -20,7 +20,7 @@ xmutil loadapp <accelerate application name>
 
 
 # How to update the application on X261?
-ALL application support using RPM to upgrade.
+All application support using RPM to upgrade.
   
 # How to check the verion on EXMU-X261?
  - For BSP verion, using the following command to check. The BSP verion is `Ver.x.x.x`.
@@ -30,7 +30,7 @@ ALL application support using RPM to upgrade.
     ```
     ![bsp-verion](./fig/bsp-verion.png)
 
- - For vitis-AI verion, using the following command to check. The vitis-AI verion can be seen at `VAI Version`
+ - For Vitis-AI verion, using the following command to check. The Vitis-AI verion can be seen at `VAI Version`
     ```
     xdputil query
     ```
@@ -51,3 +51,19 @@ Please load DPU accelerate application. Double check accelerate application list
 xmutil loadapp <dpu accelerate application name>
 ```
 
+# What is BSP?
+A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
+![bsp-tree](./fig/bsp-tree.png)
+
+# How to flash eMMC on X261?
+1. You need to prepare a MicroSD Card which can boot on X261, then use it to boot the system.  
+2. In U-Boot section, you can see the simple menu like below through debug board(UART), please select `Carrier Card (CC) boot device` here.   
+![u-boot-menu](./fig/u-boot-menu.png)  
+1. After booting, you can follow below steps to flash the image which used to replace k26's eMMC, such like:  
+   ```bash  
+   sudo umount /dev/mmcblk0p1
+   sudo umount /dev/mmcblk0p2
+   echo -e "d\n\nd\n\nd\n\nw\n" | sudo fdisk /dev/mmcblk0
+   sudo dd if=<reflash-image> of=/dev/mmcblk0 bs=1M status=progress 
+   ```
+2. Finnaly, after `reboot` then you can see the new system which you flashed.
