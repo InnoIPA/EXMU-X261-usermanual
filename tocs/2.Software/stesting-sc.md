@@ -9,7 +9,8 @@
 - [Download](#download)
 
 # Overview
-[Stesting](https://github.com/InnoIPA/stesting-sc) is a public repo. Stesting provide the board IO self testing.
+[Stesting](https://github.com/InnoIPA/stesting-sc) is a public repository that provide the board IO self testing.  
+Refer to the board info with [this page](https://github.com/InnoIPA/EXMU-X261-usermanual/tree/main/tocs/1.Hardware).
 # Download
 ```
 git clone https://github.com/InnoIPA/stesting-sc.git

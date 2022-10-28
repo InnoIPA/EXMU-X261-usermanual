@@ -14,8 +14,10 @@ We create a defect detection solution on EXMU-X261. When camera catch the image,
 # Defect Detection Solution
 ### USB Defect Detection
 This solution can be used in factory to detect the logo or the assembly of components error.
+
 PASS
 ![DD-OK](./fig/DD_predict_result_true.png)
+
 NG
 ![DD-False](./fig/DD_predict_result_false.png)
 

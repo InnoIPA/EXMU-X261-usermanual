@@ -8,19 +8,20 @@
 - [SOM Board Overview](#som-board-overview)
 - [Devices on SOM](#devices-on-som)
   - [QSPI Flash](#qspi-flash)
-  - [EMMC](#emmc)
+  - [eMMC](#emmc)
   - [DDR4](#ddr4)
   - [TPM2.0 Security Module](#tpm20-security-module)
   - [SOC](#soc)
-    - [Processing System (PS)](#processing-system-ps)
-    - [Programmable Logic (PL)](#programmable-logic-pl)
 - [Carrier Board Overview](#carrier-board-overview)
 - [IO on Carrier Board](#io-on-carrier-board)
-  - [Processing System (PS)](#processing-system-ps-1)
-  - [Programmable Logic (PL)](#programmable-logic-pl-1)
+  - [Processing System (PS)](#processing-system-ps)
+  - [Programmable Logic (PL)](#programmable-logic-pl)
 - [Switchs on Carrier Board](#switchs-on-carrier-board)
   - [SW3 & SW6](#sw3--sw6)
+  - [SW4(LED)](#sw4led)
   - [SW5](#sw5)
+    - [SW5-1,2,4](#sw5-124)
+    - [SW5-3](#sw5-3)
   - [SW7](#sw7)
   - [SW8](#sw8)
 - [Jumpers on Carrier Board](#jumpers-on-carrier-board)
@@ -42,9 +43,9 @@
 - Size : 512MB  
     Storage for boot firmware which file name is `BOOT.BIN`.
 
-## EMMC
+## eMMC
 - Size : 16GB  
-    Storage for Images, there should be two partition `boot` and `root` in EMMC.
+    Storage for Images, there should be two partition `boot` and `root` in eMMC.
 
 ## DDR4
 - Size : 4GB
@@ -57,14 +58,14 @@
 - Part Name :  xck26-sfvc784-2lv-c 
 - Zynq UltraScale+  
     This series FPGA are also called as `zynqmp`. It contain two main part:
-### Processing System (PS)
-- CPU CortexA53 * 4
-- GPU Mali400
-- IO (MIO)
-### Programmable Logic (PL)
-- Video codec (VCU)
-- Logic gates
-- IO (EMIO)
+- Processing System (PS)
+  - CPU CortexA53 * 4
+  - GPU Mali400
+  - IO (MIO)
+- Programmable Logic (PL)
+  - Video codec (VCU)
+  - Logic gates
+  - IO (EMIO)
 
 # Carrier Board Overview
 ![carrier_baord.png](fig/carrier_baord.png)
@@ -76,7 +77,7 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
 - USB
 - HDMI
 - SD Card
-- EMMC
+- eMMC
 - UART0
 - M.2 AKEY PCIE Gen2x1
 ## Programmable Logic (PL)
@@ -87,17 +88,24 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
 - I2C
 
 # Switchs on Carrier Board
+This section introduce the function of switchs which on [the baord](#carrier-board-overview).
 ## SW3 & SW6
 - Function : Hardware reset.
 
+## SW4(LED)
+- Function : Power button on when SW5-3 switch to ON.
+
 ## SW5
-- Function : IO voltage Level switch. Default off for 1.8V.
+### SW5-1,2,4
+- Function : IO voltage Level switch, default off for 1.8V.
+### SW5-3
+- Function : Power button on switch, default off for auto power on. 
 
 ## SW7
 - Function : CAN BUS Terminal resistor(120ohm) switch. SW7[1] for CAN0, SW7[2] for CAN1.
 
 ## SW8
-- Function : Boot Mode. Default Boot Mode is Quad-SPI (32b).
+- Function : Boot Mode selector, default Boot Mode is Quad-SPI (32b).
 
     Boot Mode | SW8 [1:4]
     ---|---
@@ -105,6 +113,7 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
     Quad-SPI (32b) | 1011
 
 # Jumpers on Carrier Board
+This section introduce the function of jumpers which on [the baord](#carrier-board-overview).
 ## Fan power
 - Function : 12V & GND.
 
@@ -131,7 +140,7 @@ Debug Board include three main function:
 - Function : Main interactive interface for developer, it could be access by serial port utilities like minicom, putty, mobaxterm.
   
 ## JTAG
-JTAG wont work if EEPROM on debug board didn't contain correct info.
+JTAG won't work if EEPROM on debug board didn't contain correct info.
 - Function : JTAG for xilinx IDE.
 
 ## HDMI UART
