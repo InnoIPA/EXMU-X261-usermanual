@@ -7,13 +7,15 @@
 
 # Release Notes
 
-Tyep | desc. | version
+Type | desc. | version
 --- | --- | ---
 Feat | - Introduction of EXMU-X261 hardware<br/> - Introduction of EXMU-X261 BSP v0.0.3 LTS<br/> - Introduction of EXMU-X261 software application | 0.0.1
 
 # Dependencies Version
-The dpu-sc would not be preload in BSP.
+BSP | Vitis-AI |stesting|
+|:---:|:---:|:---:|
+|0.0.3|1.4|0.0.1|
 
-BSP | Vitis-AI | VVAS|stesting|
-|:---:|:---:|:---:|:---:|
-|0.0.3|1.4|1.0|0.0.1|
+- The dpu-sc would not be preload in BSP.
+- The VVAS not be support in BSP version 0.0.3. Would be support at next BSP version.
+
