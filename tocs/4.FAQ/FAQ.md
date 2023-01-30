@@ -15,7 +15,7 @@
 - [How to update the application on X261?](#how-to-update-the-application-on-x261)
 - [How to check the verion on EXMU-X261?](#how-to-check-the-verion-on-exmu-x261)
 - [Aborted to run dpu-sc?](#aborted-to-run-dpu-sc)
-- [At first boot into system, what's the account name? password?](#at-first-boot-into-system-whats-the-account-name-password)
+- [For first time boot, what is the login account and password?](#for-first-time-boot-what-is-the-login-account-and-password)
 - [How to access USB?](#how-to-access-usb)
 
 # What is BSP?
@@ -103,10 +103,10 @@ Please load DPU accelerate application. Double check accelerate application list
 xmutil loadapp <dpu accelerate application name>
 ```
 
-# At first boot into system, what's the account name? password?
+# For first time boot, what is the login account and password?
 Account name is `petalinux`. And you can set a new password at first time.
 
 # How to access USB?
-You can use command `sudo su` to switch into the `root mode` to access USB.
+You can use the command `sudo su` to switch mode to `root` for accessing USB.
 
 ![usb-access](./fig/usb-access.png)
