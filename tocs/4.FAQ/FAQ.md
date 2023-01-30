@@ -15,6 +15,8 @@
 - [How to update the application on X261?](#how-to-update-the-application-on-x261)
 - [How to check the verion on EXMU-X261?](#how-to-check-the-verion-on-exmu-x261)
 - [Aborted to run dpu-sc?](#aborted-to-run-dpu-sc)
+- [For first time boot, what is the login account and password?](#for-first-time-boot-what-is-the-login-account-and-password)
+- [How to access USB?](#how-to-access-usb)
 
 # What is BSP?
 A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
@@ -45,9 +47,7 @@ For partition B.
 sudo flashcp -v BOOT.BIN /dev/mtd7
 ```
 Example of successfuly update qspifw.
-    ![](doc/update_qspifw.gif)
-- [How to flash eMMC on X261?](#how-to-flash-emmc-on-x261)
-- [How to update QSPI FW?](#how-to-update-qspi-fw)
+    ![](doc/fig/../../fig/update_qspifw.gif)
 
 # How to use xmutil to check Accelerate Application is loaded?
 You can use `xmutil` to check the `listapps`. The active shows `1` means accelerate application is loaded.
@@ -102,3 +102,11 @@ Please load DPU accelerate application. Double check accelerate application list
 ```
 xmutil loadapp <dpu accelerate application name>
 ```
+
+# For first time boot, what is the login account and password?
+Account name is `petalinux`. And you can set a new password at first time.
+
+# How to access USB?
+You can use the command `sudo su` to switch mode to `root` for accessing USB.
+
+![usb-access](./fig/usb-access.png)
