@@ -17,7 +17,7 @@
   - [Processing System (PS)](#processing-system-ps)
   - [Programmable Logic (PL)](#programmable-logic-pl)
 - [Switchs on Carrier Board](#switchs-on-carrier-board)
-  - [SW3 & SW6](#sw3--sw6)
+  - [SW3 \& SW6](#sw3--sw6)
   - [SW4(LED)](#sw4led)
   - [SW5](#sw5)
     - [SW5-1,2,4](#sw5-124)
@@ -26,10 +26,7 @@
   - [SW8](#sw8)
 - [Jumpers on Carrier Board](#jumpers-on-carrier-board)
   - [Fan power](#fan-power)
-  - [J22 & J23](#j22--j23)
-  - [J24](#j24)
-  - [J25](#j25)
-  - [J26](#j26)
+  - [CN6](#cn6)
 - [Debug board](#debug-board)
   - [Debug UART](#debug-uart)
   - [JTAG](#jtag)
@@ -79,7 +76,7 @@ There are two types of IO PS & PL on carrier board, IO which from PS will be alw
 - SD Card
 - eMMC
 - UART0
-- M.2 AKEY PCIE Gen2x1
+- M.2 EKEY PCIE Gen2x1
 ## Programmable Logic (PL)
 - M.2 MKEY PCIE Gen3x4
 - CAN0
@@ -117,17 +114,12 @@ This section introduce the function of jumpers which on [the baord](#carrier-boa
 ## Fan power
 - Function : 12V & GND.
 
-## J22 & J23
-- Function : I2C for flashing clock generator.
-
-## J24
-- Function : Hardware power-on.
-
-## J25
-- Function : Hardware reset.
-
-## J26
-- Function : 5V & GND.
+## CN6
+CN6 is for innoagent connection.
+PIN9 | PIN7 | PIN5 | PIN3 | PIN1
+---|---|---|---|---
+NC | GND | GND | GND | GND |
+UARTRX | UARTTX | RST | PWR | +5V
 
 # Debug board
 ![debug_board.png](fig/debug_board.jpg)
