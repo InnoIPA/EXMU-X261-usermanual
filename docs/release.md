@@ -7,7 +7,7 @@
 
 # Release Notes
 
-Tyep | desc. | version
+Type | desc. | version
 --- | --- | ---
 Feat | - Introduction of EXMU-X261 hardware<br/> - Introduction of EXMU-X261 BSP v0.0.3 LTS<br/> - Introduction of EXMU-X261 software application | 0.0.1
 doc | - Add workflow of flashing qspi<br/> - Update workflow of flashing emmc<br/> - Update A2 carrier board info<br/> - Update rpm discription<br/> - Update "What is BSP"<br/> - Modify FAQ and dependency versions<br/> - Fix typos<br/> | 0.0.2
