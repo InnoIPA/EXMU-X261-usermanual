@@ -4,8 +4,7 @@
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
 -->
-# Table of Contents
-- [Table of Contents](#table-of-contents)
+# TOC
 - [What you will need](#what-you-will-need)
   - [Hardware](#hardware)
   - [Software](#software)

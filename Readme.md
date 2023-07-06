@@ -24,22 +24,22 @@ Copyright 2022 AIoT Dev. Dep., IPA
 - [License](#license)
    
 # See What's New
-- [Release Notes](./docs/release.md)
-- [Dependencies Version](./docs/release.md)
+- [Changelogs](./docs/changelogs.md)
 
 # Introduction
 We have created this repository to provide a quick and easy way to get started with our product. Here are some tips on how to learn it. Additionally, if you have any ideas regarding our content, you can open an issue on GitHub. Sync fork will bring up the newest content from the upstream repository.
 
-# Table of contents
- - [Getting Started](./tocs/0.Getting-Started/Getting-Started.md)
+# Getting Started
+ - [Installation and Setup](./tocs/0.Getting-Started/Getting-Started.md)
   - [Hardware](./tocs/1.Hardware/hardware.md)
   - [Software](./tocs/2.Software/)
     - [dpu-sc](./tocs/2.Software/dpu-sc.md)
     - [stesting-sc](./tocs/2.Software/stesting-sc.md)
     - [VVAS](./tocs/2.Software/VVAS.md)
-  - [POC](./tocs/3.POC/)
+  - [PoC](./tocs/3.POC/)
     - [Defect Detection](./tocs/3.POC/Defect-Detection.md)
     - [VVAS Demo](./tocs/3.POC/VVAS-Demo.md)
+  - [Case study](./tocs/5.Case_study/case_study.md)
   - [FAQ](./tocs/4.FAQ/FAQ.md)
 
   <br />
