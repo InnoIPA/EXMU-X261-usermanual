@@ -5,6 +5,7 @@
  https://opensource.org/licenses/MIT
 -->
 
+# TOC
 - [Overview](#overview)
 - [How to Install](#how-to-install)
   - [VVAS](#vvas)
@@ -14,6 +15,8 @@
   - [Innodisk demo](#innodisk-demo)
     - [Install by RPM](#install-by-rpm-1)
 - [How to run](#how-to-run)
+- [DEMO](#demo)
+  - [Computex taipei, 2023](#computex-taipei-2023)
 - [Reference](#reference)
 
 # Overview
@@ -129,6 +132,10 @@ rpm -ivh --force vvas_demo-0.1-1.aarch64.rpm
 3. The screen should shows result as below:
    ![vvas_demo](fig/vvas_demo.jpg)
 
+
+# DEMO
+## Computex taipei, 2023
+![computex](fig/vvas_computex_2023.gif)
 
 # Reference
 

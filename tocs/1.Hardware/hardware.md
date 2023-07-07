@@ -5,6 +5,7 @@
  https://opensource.org/licenses/MIT
 -->
 
+# TOC
 - [SOM Board Overview](#som-board-overview)
 - [Devices on SOM](#devices-on-som)
   - [QSPI Flash](#qspi-flash)
