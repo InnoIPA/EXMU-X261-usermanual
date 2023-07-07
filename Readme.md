@@ -16,10 +16,9 @@ Copyright 2022 AIoT Dev. Dep., IPA
 
 # EXMU-X261
 
-- [EXMU-X261](#exmu-x261)
 - [See What's New](#see-whats-new)
 - [Introduction](#introduction)
-- [Table of contents](#table-of-contents)
+- [Getting Started](#getting-started)
 - [How to open an issue and sync repo on github?](#how-to-open-an-issue-and-sync-repo-on-github)
 - [License](#license)
    
@@ -35,12 +34,21 @@ We have created this repository to provide a quick and easy way to get started w
   - [Software](./tocs/2.Software/)
     - [dpu-sc](./tocs/2.Software/dpu-sc.md)
     - [stesting-sc](./tocs/2.Software/stesting-sc.md)
-    - [VVAS](./tocs/2.Software/VVAS.md)
+    - [VVAS(Vitis Video Analytics SDK)](./tocs/2.Software/VVAS.md)
   - [PoC](./tocs/3.POC/)
-    - [Defect Detection](./tocs/3.POC/Defect-Detection.md)
     - [VVAS Demo](./tocs/3.POC/VVAS-Demo.md)
+    - [ANPR](./tocs/3.POC/ANPR.md)
   - [Case study](./tocs/5.Case_study/case_study.md)
-  - [FAQ](./tocs/4.FAQ/FAQ.md)
+    - [Powered by AMD](https://www.xilinx.com/video/corporate/innodisk-machine-vision-solution-kit-powered-by-amd-kria-som.html)
+      - [Innodisk’s Machine Vision Solution Kit Powered by AMD’s Kria SOM](https://www.xilinx.com/content/dam/xilinx/publications/powered-by-xilinx/innodisk-case-study.pdf)
+    - [Defects detection solutions](./tocs/5.Case_study/Defect-Detection.md)
+        - **USB Pendrive assembly**
+        - **Screw defect**
+        - **Pneumonia (X-Ray)**
+    - [用于缺陷检测的自动化边缘 AI 解决方案](https://china.xilinx.com/video/events/cns_xtd_AI_solution.html)
+    - [宜鼎国际最新肺部X光片偵測 自动化边缘 AI 解决方案加速医疗诊断速度](https://www.myinnodisk.cn/newsDetail/1363.html)
+    - [Innodisk Corporation(Platform) x Neovision(AI Model)](https://www.linkedin.com/posts/neovisionsas_intelligenceartificielle-industrie-activity-7039869643737456640-52r8?utm_source=share&utm_medium=member_desktop)
+      - **Gesture Recognition**
 
   <br />
   <div align="center"><img width="80%" height="50%" src="./EXMU-X261.png"></div>
