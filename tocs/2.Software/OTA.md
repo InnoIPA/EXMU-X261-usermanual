@@ -2,7 +2,7 @@
 
 We provide Image-based Over-the-Air update on EXMU-X261. One can use our toolings and images to update your EXMU-X261.
 
-![OTA_architecture.png](./fig/OTA_architecture.png)
+![OTA_architecture.jpg](./fig/OTA_architecture.jpg)
 
 # TOC
 - [Overview](#overview)
