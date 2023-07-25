@@ -5,17 +5,19 @@
  https://opensource.org/licenses/MIT
 -->
 ```
-            __            _____
-   _______ |__|   /\     |_   _|
-  |   _   |      /  \      | |
-  |  |_|  |     / /\ \     | |
-  |   _   |    / /__\ \   _| |_
-  |__| |__|   /_/    \_\ |_____|
+           __             _____ 
+  _______ |__|   /\      |_   _|
+ |   _   |      /  \       | |  
+ |  |_|  |     / /\ \      | |  
+ |   _   |    / /__\ \     | | 
+ |  | |  |   / ______ \   _| |_ 
+ |__| |__|  /_/      \_\ |_____|
 Copyright 2022 AIoT Dev. Dep., IPA
 ```
 
 # EXMU-X261
 
+- [EXMU-X261](#exmu-x261)
 - [See What's New](#see-whats-new)
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
