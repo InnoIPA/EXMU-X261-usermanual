@@ -6,15 +6,19 @@
 -->
 
 # TOC
+- [TOC](#toc)
 - [Overview](#overview)
 - [How to Install](#how-to-install)
   - [VVAS](#vvas)
-  - [Xilinx smartcam](#xilinx-smartcam)
+  - [Xilinx smartcam \& aibox-reid](#xilinx-smartcam--aibox-reid)
     - [Install by RPM](#install-by-rpm)
     - [Manually install](#manually-install)
   - [Innodisk demo](#innodisk-demo)
     - [Install by RPM](#install-by-rpm-1)
+  - [FPGA FW (application)](#fpga-fw-application)
 - [How to run](#how-to-run)
+  - [Preparation](#preparation)
+  - [run](#run)
 - [DEMO](#demo)
   - [Computex taipei, 2023](#computex-taipei-2023)
 - [Reference](#reference)
@@ -31,7 +35,7 @@ For runnning the innodisk VVAS demo, you will need three parts:
   Contains example files for innodisk VVAS demo.
 
 # How to Install
-Following install process are using Vitis ai 1.4 and VVAS 1.0 for example. Change the version of VVAS by table below, if using different vesion of Vitis ai.
+Following install process are using Vitis ai 2.5 and VVAS 2.0 for example. Change the version of VVAS by table below, if using different vesion of Vitis ai.
  Vitis ai version | VVAS version
  --- | --- 
  1.4 | 1.0 
@@ -40,9 +44,11 @@ Following install process are using Vitis ai 1.4 and VVAS 1.0 for example. Chang
 
 `If you are using customised BSP, there may have dependency issue. So we will suggest manually install rather than install by RPM(Red Hat Package Manager).`
 ## VVAS
-Please check out [this page](../2.Software/VVAS.md).
-## Xilinx smartcam
-We will use the library of Xilinx smartcam to draw the result of AI inference.
+- VVAS 2.0 is default built-in with the system, check out [this page](../2.Software/VVAS.md) if user needs to build VVAS manually.
+## Xilinx smartcam & aibox-reid
+- This demo will use the library of Xilinx smartcam and aibox-reid to draw the result of AI inference and using the preprocessing IP.
+- Following process is using smartcam as example, remember to install aibox-reid as well.
+
 ### Install by RPM
 ```
 rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
@@ -107,9 +113,37 @@ rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
 rpm -ivh --force vvas_demo-0.1-1.aarch64.rpm
 ```
 
+## FPGA FW (application)
+- Using the firmware `aibox-reid` which from [kria-apps-firmware](https://github.com/Xilinx/kria-apps-firmware).
+
+
 # How to run
-- Preparation
-    Plug the HDMI port of carrier board to a screen.
+## Preparation
+- Plug the HDMI port of carrier board to a screen.
+- Disable the display in device-tree for video mixer on PL, avoiding video mixer initial fail that makes user still using DP on PS.
+  ```device-tree
+  display@fd4a0000 {
+  status = "disabled";
+  };
+
+  &zynqmp_dp_snd_codec0 {
+    status = "disabled";
+  };
+
+  &zynqmp_dp_snd_pcm0 {
+    status = "disabled";
+  };
+
+  &zynqmp_dp_snd_pcm1 {
+    status = "disabled";
+  };
+
+  &zynqmp_dp_snd_card {
+    status = "disabled";
+  };
+  ```
+
+## run 
 
 1. Update FPGA application.
     
