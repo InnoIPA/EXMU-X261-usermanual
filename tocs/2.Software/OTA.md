@@ -170,12 +170,12 @@ We are now going to create a custom configuration file from `local.ini`.
 
 # FAQ
 
-1. After executing `swu-pusher`, no progress status is outputed.
+1. After executing `swu-pusher`, no progress status was outputed.
 
     ![OTA_faq1.png](./fig/OTA_faq1.png)
 
     Make sure `swu-client` service is running. Execute `sudo systemctl status swu-client` on EXMU-X261 to verify that `suw-client` service is indeed running. If not, execute `sudo systemctl start swu-client` to start the service. 
 
-2. What if an update failes?
+2. What if an update failed?
 
-    To see why an update failes, execute `sudo journalctl -u swu-client` to see logs.
+    To see why an update failed, execute `sudo journalctl -u swu-client` to see logs.
