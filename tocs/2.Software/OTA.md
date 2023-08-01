@@ -119,7 +119,7 @@ We are now going to create a custom configuration file from `local.ini`.
     ```
 
     ```bash
-    ssh -t petalinux@192.168.0.2 'sudo mv ~/config.ini /opt/innodisk/swu_utility'
+    ssh -t petalinux@192.168.0.2 'sudo mv ~/config.ini /opt/innodisk/swu-client'
     ```
 
     ```bash
