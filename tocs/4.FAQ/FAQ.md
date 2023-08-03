@@ -7,6 +7,7 @@
 
 
 # FAQ
+- [FAQ](#faq)
 - [What is BSP?](#what-is-bsp)
 - [How to flash eMMC on X261?](#how-to-flash-emmc-on-x261)
 - [How to update QSPI FW?](#how-to-update-qspi-fw)
@@ -16,6 +17,8 @@
 - [Aborted to run dpu-sc?](#aborted-to-run-dpu-sc)
 - [For first time boot, what is the login account and password?](#for-first-time-boot-what-is-the-login-account-and-password)
 - [How to access USB?](#how-to-access-usb)
+- [How to use docker on EXMU-x261?](#how-to-use-docker-on-exmu-x261)
+- [Will the kernel be updated?](#will-the-kernel-be-updated)
 
 # What is BSP?
 A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
@@ -109,3 +112,12 @@ Account name is `petalinux`. And you can set a new password at first time.
 You can use the command `sudo su` to switch mode to `root` for accessing USB.
 
 ![usb-access](./fig/usb-access.png)
+
+# How to use docker on EXMU-x261?
+You can install docker on EXMU-X261 by following command and refer [kria-docker](https://github.com/Xilinx/kria-docker) for more detail.
+
+```
+    sudo dnf install docker-ce.cortexa72_cortexa53 -y
+```
+# Will the kernel be updated?
+Our kernel cannot be updated. If any adjustments are needed, please contact us.
