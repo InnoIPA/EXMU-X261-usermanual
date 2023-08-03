@@ -5,11 +5,10 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
+- [TOC](#toc)
 - [Intorduction](#intorduction)
 - [Defect Detection Solutions](#defect-detection-solutions)
-  - [USB pendrive Defect Detection](#usb-pendrive-defect-detection)
-  - [Screw Defect Detection](#screw-defect-detection)
-  - [Pneumonia Detection](#pneumonia-detection)
+- [Pre-build image](#pre-build-image)
    
 # Intorduction
 We create the defect detection solutions on EXMU-X261. When camera catch the image, the image will input to EXMU-X261. The EXMU-X261 will preprocess the image. After all, the DPU will inference image and output result with bounding box. The result will shows on screen.  
@@ -55,3 +54,13 @@ This solution can be used in factory to detect the screw defect.
 ![oty](./fig/DD-oty.gif)
 </details>
 
+# Pre-build image
+We provide pre-built images that you can use to follow the [Getting Started](../0.Getting-Started/Getting-Started.md) guide to prepare the SD card. By switching X261 to boot from the SD card, you can experience our solution.
+- USB pendrive Defect Detection
+  - USB_122_AIBOX_230720.gz
+- Screw Defect Detection
+  - pneumonia_122_AIBOX_230720.gz
+- Screw Defect Detection
+  - screw_122_AIBOX_230720.gz
+
+We also has other pre-built images which can be find on other relevant pages.
