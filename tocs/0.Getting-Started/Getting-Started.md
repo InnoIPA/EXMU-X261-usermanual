@@ -5,6 +5,7 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
+- [TOC](#toc)
 - [What you will need](#what-you-will-need)
   - [Hardware](#hardware)
   - [Software](#software)
@@ -26,7 +27,7 @@
 - A MicroSD Card: Please prepare a microSD card of 16GB or more.  
 ![microsd-card](fig/microsd-card.jpg)
 ## Software
-- OS Image(Ubuntu), you can contact james_chen@innodisk.com, then you can refer to the "Setting up the SD Card Image" section for first boot.
+**EXMU-X261 has preloaded image in eMMC during manufacturing.** If you require other images, such as pre-build image(more detail in [Case-study](../5.Case-study/) topic), or want to use the system on an SD card. Please contact james_chen@innodisk.com, then you can refer to the "Setting up the SD Card Image" section for first boot.
 
 # Setting up the SD Card Image
 You will need a computer to prepare the system for use on X261. Here we will introduce writing the system to the microSD card, and then no matter whether the operating system you are using is Windows or Linux, you can use the following flow normally.
@@ -52,7 +53,8 @@ You will need a computer to prepare the system for use on X261. Here we will int
 4. Finally, system boot immediately after plugging in the power supply.  
 ![connect-04](fig/connect-04.png)   
 # Booting your X261
-Please refer to [Xilinx Website](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/booting-your-starter-kit.html)
+For some detail, please refer to [Xilinx Website](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/booting-your-starter-kit.html). If you follow the above steps and are preparing to boot from an SD card, please switch boot option to SD card( [Refer the "Chboot" topic in utilities-intro](../2.Software/utilities-intro.md))
+
 # Next Steps
 After booting into the system successfully, you can refer to [this](../1.Hardware/hardware.md) for more detail. Or you can run some of the examples we provide on the X261:
 - [dpu-sc](../2.Software/dpu-sc.md): dpu-sc is a sample code that uses DPU instead of GPU for AI inference.
