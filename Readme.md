@@ -16,10 +16,12 @@ Copyright 2022 AIoT Dev. Dep., IPA
 
 # EXMU-X261
 
+- [EXMU-X261](#exmu-x261)
 - [See What's New](#see-whats-new)
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
 - [How to open an issue and sync repo on github?](#how-to-open-an-issue-and-sync-repo-on-github)
+- [Contributor](#contributor)
 - [License](#license)
    
 # See What's New
@@ -58,5 +60,15 @@ We have created this repository to provide a quick and easy way to get started w
 # How to open an issue and sync repo on github?
 Issues are used for tracking ideas, feedback, tasks, and bugs. To assist you, here is a [guide](./docs/contributing/Readme.md) on how to open an issue and follow it. Additionally, the guide introduces how to sync from upstream repositories.
 
+
+# Contributor
+Author | E-mail | Corp.|
+|:---:|:---:|:---:|
+|Allen.H|allen_huang@innodisk.com|innodisk Inc|
+|Hueiru|hueiru_chen@inndisk.com|innodisk Inc|
+|Jerry|jerry_hong@innodisk.com|innodisk Inc|
+|Chihhsng|chihhsing_chen@innodisk.com|innodisk Inc|
+|Wilson|wilson_yeh@innodisk.com|innodisk Inc|
+|Billy|billy_chen@innodisk.com|innodisk Inc|
 # License
 [MIT](./LICENSE)
