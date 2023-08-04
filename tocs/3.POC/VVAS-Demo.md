@@ -35,14 +35,6 @@ For runnning the innodisk VVAS demo, you will need three parts:
   Contains example files for innodisk VVAS demo.
 
 # How to Install
-Following install process are using Vitis ai 2.5 and VVAS 2.0 for example. Change the version of VVAS by table below, if using different vesion of Vitis ai.
- Vitis ai version | VVAS version
- --- | --- 
- 1.4 | 1.0 
- 2.0 | 1.1 
- 2.5 | 2.0 
-
-`If you are using customised BSP, there may have dependency issue. So we will suggest manually install rather than install by RPM(Red Hat Package Manager).`
 ## VVAS
 - VVAS 2.0 is default built-in with the system, check out [this page](../2.Software/VVAS.md) if user needs to build VVAS manually.
 ## Xilinx smartcam & aibox-reid
