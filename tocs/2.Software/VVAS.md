@@ -5,6 +5,7 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
+- [TOC](#toc)
 - [Overview](#overview)
 - [How to Install](#how-to-install)
   - [Install by RPM](#install-by-rpm)
@@ -16,7 +17,9 @@ VVAS(Vitis Video Analytics SDK) contains plugin developed by xilinx based on gst
 ![VVAS](fig/vvas.png)
 
 # How to Install
-Following install process are using Vitis AI 1.4 and VVAS 1.0 for example. Change the version of VVAS by table below, if using different vesion of Vitis AI.
+- `Since BSP 1.2.0 which with Vitis AI 2.5 & VVAS 2.0, VVAS is default built-in with the system, user do not need to install again.`
+- Change the version of VVAS by table below, if using different vesion of Vitis AI.
+
  Vitis AI version | VVAS version
  --- | --- 
  1.4 | 1.0 

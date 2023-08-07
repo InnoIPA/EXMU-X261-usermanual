@@ -6,15 +6,18 @@
 -->
 
 # TOC
+- [TOC](#toc)
 - [Overview](#overview)
 - [How to Install](#how-to-install)
   - [VVAS](#vvas)
-  - [Xilinx smartcam](#xilinx-smartcam)
-    - [Install by RPM](#install-by-rpm)
-    - [Manually install](#manually-install)
+  - [Xilinx smartcam \& aibox-reid](#xilinx-smartcam--aibox-reid)
+    - [Build \& Install](#build--install)
   - [Innodisk demo](#innodisk-demo)
-    - [Install by RPM](#install-by-rpm-1)
+    - [Install by RPM](#install-by-rpm)
+  - [FPGA FW (application)](#fpga-fw-application)
 - [How to run](#how-to-run)
+  - [Preparation](#preparation)
+  - [run](#run)
 - [DEMO](#demo)
   - [Computex taipei, 2023](#computex-taipei-2023)
 - [Reference](#reference)
@@ -31,23 +34,13 @@ For runnning the innodisk VVAS demo, you will need three parts:
   Contains example files for innodisk VVAS demo.
 
 # How to Install
-Following install process are using Vitis ai 1.4 and VVAS 1.0 for example. Change the version of VVAS by table below, if using different vesion of Vitis ai.
- Vitis ai version | VVAS version
- --- | --- 
- 1.4 | 1.0 
- 2.0 | 1.1 
- 2.5 | 2.0 
-
-`If you are using customised BSP, there may have dependency issue. So we will suggest manually install rather than install by RPM(Red Hat Package Manager).`
 ## VVAS
-Please check out [this page](../2.Software/VVAS.md).
-## Xilinx smartcam
-We will use the library of Xilinx smartcam to draw the result of AI inference.
-### Install by RPM
-```
-rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
-```
-### Manually install
+- VVAS 2.0 is default built-in with the system, check out [this page](../2.Software/VVAS.md) if user needs to build VVAS manually.
+## Xilinx smartcam & aibox-reid
+- This demo will use the library of Xilinx smartcam and aibox-reid to draw the result of AI inference and using the preprocessing IP.
+- Following process is using smartcam as example, remember to install aibox-reid as well.
+
+### Build & Install
 - Preparation
     Petalinux sdk including Vitis ai, opencv (over 4.4), jansson.
 1. Download source code.
@@ -63,24 +56,8 @@ rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
     unset LD_LIBRARY_PATH
     source <path-to-sdk>/environment-setup-aarch64-xilinx-linux
     ```
-    
-3. Fix the `build.sh` as below:
-    
-    ```bash
-    #! /bin/sh
-    
-    sdkdir=${1}
-    conf=${2:-Release}
-    
-    # unset LD_LIBRARY_PATH;
-    # source ${sdkdir}/environment-setup-*;
-    mkdir -p build
-    cd build
-    cmake -DCMAKE_BUILD_TYPE=${conf} -DCMAKE_TOOLCHAIN_FILE=${sdkdir}/sysroots/x86_64-petalinux-linux/usr/share/cmake/OEToolchainConfig.cmake ../ && make -j && make package
-    cd ..
-    ```
-    
-4. Build the project.
+
+3. Build the project.
     
     ```bash
     chmod 755 ./build.sh
@@ -93,12 +70,13 @@ rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
     ```
     Follow [this post](https://support.xilinx.com/s/question/0D52E00006mEc4wSAC/building-smartcam-app-error-missing-libcorrespondencea-?language=en_US) of xilinx forum will fix the issue.
     
-5. Copy the .rpm file from x86 host to the rootfs of k26.
-6. Install the .rpm file on k26.
+4. Copy the .rpm file from x86 host to the rootfs of k26.
+5. Install the .rpm file on k26.
     
     ```bash
     rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
     ```
+    ![vvas_smartcam_install](fig/vvas_smartcam_install.png)
 ## Innodisk demo
 - Preparation
     Install the VVAS and xilinx smartcam by following previous section.
@@ -107,9 +85,37 @@ rpm -ivh --force smartcam-1.0.1-1.aarch64.rpm
 rpm -ivh --force vvas_demo-0.1-1.aarch64.rpm
 ```
 
+## FPGA FW (application)
+- Using the firmware `aibox-reid` which from [kria-apps-firmware](https://github.com/Xilinx/kria-apps-firmware).
+
+
 # How to run
-- Preparation
-    Plug the HDMI port of carrier board to a screen.
+## Preparation
+- Plug the HDMI port of carrier board to a screen.
+- Disable the display in device-tree for video mixer on PL, avoiding video mixer initial fail that makes user still using DP on PS.
+  ```device-tree
+  display@fd4a0000 {
+  status = "disabled";
+  };
+
+  &zynqmp_dp_snd_codec0 {
+    status = "disabled";
+  };
+
+  &zynqmp_dp_snd_pcm0 {
+    status = "disabled";
+  };
+
+  &zynqmp_dp_snd_pcm1 {
+    status = "disabled";
+  };
+
+  &zynqmp_dp_snd_card {
+    status = "disabled";
+  };
+  ```
+
+## run 
 
 1. Update FPGA application.
     

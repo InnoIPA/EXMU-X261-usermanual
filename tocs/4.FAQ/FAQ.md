@@ -7,12 +7,13 @@
 
 
 # FAQ
+- [FAQ](#faq)
 - [What is BSP?](#what-is-bsp)
 - [How to flash eMMC on X261?](#how-to-flash-emmc-on-x261)
 - [How to update QSPI FW?](#how-to-update-qspi-fw)
 - [How to use xmutil to check Accelerate Application is loaded?](#how-to-use-xmutil-to-check-accelerate-application-is-loaded)
 - [How to update the application on X261?](#how-to-update-the-application-on-x261)
-- [How to check the verion on EXMU-X261?](#how-to-check-the-verion-on-exmu-x261)
+- [How to check the version on EXMU-X261?](#how-to-check-the-version-on-exmu-x261)
 - [Aborted to run dpu-sc?](#aborted-to-run-dpu-sc)
 - [For first time boot, what is the login account and password?](#for-first-time-boot-what-is-the-login-account-and-password)
 - [How to access USB?](#how-to-access-usb)
@@ -70,27 +71,27 @@ xmutil loadapp <accelerate application name>
 # How to update the application on X261?
 All application support using RPM to upgrade.
   
-# How to check the verion on EXMU-X261?
-For BSP verion, using the following command to check. The BSP verion is `Ver.x.x.x`.
+# How to check the version on EXMU-X261?
+For BSP version, using the following command to check. The BSP version is `Ver.x.x.x`.
 
+```bash
+cat /etc/issue
 ```
-bash /etc/init.d/welcome_logo.sh
-```
 
-![bsp-verion](./fig/bsp-verion.png)
+![bsp-version](./fig/bsp-version.png)
 
-For Vitis-AI verion, using the following command to check. The Vitis-AI verion can be seen at `VAI Version`.
+For Vitis-AI version, using the following command to check. The Vitis-AI version can be seen at `VAI Version`.
 ```
 xdputil query
 ```
 
 ![xdputil_query](./fig/xdputil_query.png)
 
-The dpu-sc not preload in our system. If you need to check dpu-sc verion, the verion shows when running dpu-sc.
+The dpu-sc not preload in our system. If you need to check dpu-sc version, the version shows when running dpu-sc.
 
- ![dpu-sc](./fig/dpu-sc-verion.png)
+ ![dpu-sc](./fig/dpu-sc-version.png)
 
-For stesting verion, stesting can't check verion yet. Would be added in future verion.
+For stesting version, stesting can't check version yet. Would be added in future version.
    
 # Aborted to run dpu-sc?
 When running the dpu-sc and got the error as following shows. It is because system doeesn't load DPU accelerate application yet.
