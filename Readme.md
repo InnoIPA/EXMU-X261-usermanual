@@ -16,7 +16,6 @@ Copyright 2022 AIoT Dev. Dep., IPA
 
 # EXMU-X261
 
-- [EXMU-X261](#exmu-x261)
 - [See What's New](#see-whats-new)
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)

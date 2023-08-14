@@ -5,7 +5,6 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
-- [TOC](#toc)
 - [Intorduction](#intorduction)
 - [Defect Detection Solutions](#defect-detection-solutions)
 - [Pre-build image](#pre-build-image)

@@ -5,7 +5,6 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
-- [TOC](#toc)
 - [What you will need](#what-you-will-need)
   - [Hardware](#hardware)
   - [Software](#software)
@@ -32,14 +31,16 @@
 As mentioned above, if you decide to use our pre-built image. Please contact james_chen@innodisk.com. We will provide you with a [myinnodisk](https://myinnodisk.innodisk.com/myinnodisk/Login.aspx) account. Once inside, you will see as the following. And you can download the pre-built image you want.
  ![my-innodisk](fig/myinnodisk.png)
 
+The pre-build image which you want to use, should correspond to the current BSP version that you have. For example, if you have BSP version 1.2.2, you must use a pre-build image that matches this version. You can refer to the [pre-build image naming role](../4.FAQ/FAQ.md#pre-build-image-naming-role) to choose the image you are going to use.
+
 Then you can refer to the "Setting up the SD Card Image" section for first boot.
 
 # Setting up the SD Card Image
 You will need a computer to prepare the system for use on X261. Here we will introduce writing the system to the microSD card, and then no matter whether the operating system you are using is Windows or Linux, you can use the following flow normally.
-1. Download the `X261 WIC Image`(please contact james_chen@innodisk.com) to your computer.
+1. Download the `X261 WIC Image` or `X261 .gz Image`(please contact james_chen@innodisk.com) to your computer.
 2. Flash the image file to the microSD card according to the following instructions:
    1. Download and launch [Etcher](https://www.balena.io/etcher/).
-   2. Select the image file to use(If you don't have any WIC Image, you can download it [here](fig/balena-01.png)).  
+   2. Select the image file to use.  
    ![balena-01](fig/balena-01.png)
    1. Please insert the microSD card into your computer, then select the microSD Card to use.  
    ![balena-03](fig/balena-03.png)  
@@ -58,7 +59,11 @@ You will need a computer to prepare the system for use on X261. Here we will int
 4. Finally, system boot immediately after plugging in the power supply.  
 ![connect-04](fig/connect-04.png)   
 # Booting your X261
-For some detail, please refer to [Xilinx Website](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/booting-your-starter-kit.html). If you follow the above steps and are preparing to boot from an SD card, please switch boot option to SD card( [Refer the "Chboot" topic in utilities-intro](../2.Software/utilities-intro.md))
+For some detail, please refer to [Xilinx Website](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/booting-your-starter-kit.html). If you follow the above steps and are preparing to boot from an SD card, please switch boot option to SD card( [Refer the "Chboot" topic in utilities-intro](../2.Software/utilities-intro.md)).  
+
+Your username would be `petalinux`.And you can set a new password at first time.
+
+> Note: Chboot is supported starting from our BSP version 1.2.3.
 
 # Next Steps
 After booting into the system successfully, you can refer to [this](../1.Hardware/hardware.md) for more detail. Or you can run some of the examples we provide on the X261:

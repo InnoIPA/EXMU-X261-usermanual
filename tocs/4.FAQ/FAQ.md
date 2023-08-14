@@ -7,7 +7,6 @@
 
 
 # FAQ
-- [FAQ](#faq)
 - [What is BSP?](#what-is-bsp)
 - [How to flash eMMC on X261?](#how-to-flash-emmc-on-x261)
 - [How to update QSPI FW?](#how-to-update-qspi-fw)
@@ -121,3 +120,9 @@ You can install docker on EXMU-X261 by following command and refer [kria-docker]
 ```
 # Will the kernel be updated?
 Our kernel cannot be updated. If any adjustments are needed, please contact us.
+
+# Pre-build image naming role?
+The following is pre-build image naming role.
+```
+<projectname>_<BSP Version>_<APP>_<pkg coded date>
+```
