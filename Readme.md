@@ -42,6 +42,7 @@ We have created this repository to provide a quick and easy way to get started w
   - [PoC](./tocs/3.POC/)
     - [VVAS Demo](./tocs/3.POC/VVAS-Demo.md)
     - [ANPR](./tocs/3.POC/ANPR.md)
+  - [FAQ](./tocs/4.FAQ/FAQ.md)
   - [Case study](./tocs/5.Case-study/case-study.md)
     - [Powered by AMD](https://www.xilinx.com/video/corporate/innodisk-machine-vision-solution-kit-powered-by-amd-kria-som.html)
       - [Innodisk’s Machine Vision Solution Kit Powered by AMD’s Kria SOM](https://www.xilinx.com/content/dam/xilinx/publications/powered-by-xilinx/innodisk-case-study.pdf)
