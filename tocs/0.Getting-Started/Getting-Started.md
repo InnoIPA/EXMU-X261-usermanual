@@ -31,7 +31,7 @@
 As mentioned above, if you decide to use our pre-built image. Please contact james_chen@innodisk.com. We will provide you with a [myinnodisk](https://myinnodisk.innodisk.com/myinnodisk/Login.aspx) account. Once inside, you will see as the following. And you can download the pre-built image you want.
  ![my-innodisk](fig/myinnodisk.png)
 
-The pre-build image which you want to use, should correspond to the current BSP version that you have. For example, if you have BSP version 1.2.2, you must use a pre-build image that matches this version. You can refer to the [pre-build image naming role](../4.FAQ/FAQ.md#pre-build-image-naming-role) to choose the image you are going to use.
+The pre-build image which you want to use, should correspond to the current BSP version that you have. For example, if you have BSP version 1.2.2, you must use a pre-build image that matches this version. You can refer to the [pre-build image naming rule](../4.FAQ/FAQ.md#pre-build-image-naming-rule) to choose the image you are going to use.
 
 Then you can refer to the "Setting up the SD Card Image" section for first boot.
 

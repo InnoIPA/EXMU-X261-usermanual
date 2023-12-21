@@ -19,10 +19,11 @@
 - [How to access USB?](#how-to-access-usb)
 - [How to use docker on EXMU-x261?](#how-to-use-docker-on-exmu-x261)
 - [Will the kernel be updated?](#will-the-kernel-be-updated)
-- [Pre-build image naming role?](#pre-build-image-naming-role)
+- [Pre-build image naming rule?](#pre-build-image-naming-rule)
 - [How to check if X261 is operating normally from the hardware?](#how-to-check-if-x261-is-operating-normally-from-the-hardware)
 - [How to check the xmodel information on X261?](#how-to-check-the-xmodel-information-on-x261)
 - [The accelerate application continuously fails to load ?](#the-accelerate-application-continuously-fails-to-load-)
+- [Why can't playing videos with gstreamer's MJPEG on X261 achieve the expected 30 FPS?](#why-cant-playing-videos-with-gstreamers-mjpeg-on-x261-achieve-the-expected-30-fps)
 
 # What is BSP?
 A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
@@ -138,8 +139,8 @@ You can install docker on EXMU-X261 by following command and refer [kria-docker]
 # Will the kernel be updated?
 Our kernel cannot be updated. If any adjustments are needed, please contact us.
 
-# Pre-build image naming role?
-The following is pre-build image naming role.
+# Pre-build image naming rule?
+The following is pre-build image naming rule.
 ```
 <projectname>_<BSP Version>_<APP>_<pkg coded date>
 ```
@@ -168,3 +169,6 @@ Please follow the steps below for troubleshooting.
 3. Reinstall the SOM board onto the carried board.
 
 Notice: Ensure the orientation of the SOM board and carried board is correct. Do not press hard, as it may cause permanent damage.
+
+# Why can't playing videos with gstreamer's MJPEG on X261 achieve the expected 30 FPS?
+This is because X261 does not provide an MJPEG decoder, hence the video goes into the processor for decoding. If needed, please use the H.264 provided on X261 for video decoding.

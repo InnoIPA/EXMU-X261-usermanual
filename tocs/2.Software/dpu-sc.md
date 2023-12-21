@@ -5,6 +5,7 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
+- [TOC](#toc)
 - [Overview](#overview)
 - [Download](#download)
 
@@ -13,5 +14,5 @@
 
 # Download
 ```
-git clone https://github.com/aiotads/EXMU-X261-dpu-sc.git
+git clone https://github.com/InnoIPA/dpu-sc.git
 ```
