@@ -5,7 +5,6 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
-- [TOC](#toc)
 - [Overview](#overview)
 - [How to Install](#how-to-install)
   - [Install by RPM](#install-by-rpm)

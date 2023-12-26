@@ -6,7 +6,6 @@
 -->
 
 # TOC
-- [TOC](#toc)
 - [Overview](#overview)
 - [How to Install](#how-to-install)
   - [VVAS](#vvas)
@@ -143,13 +142,6 @@ rpm -ivh --force vvas_demo-0.1-1.aarch64.rpm
 # DEMO
 ## Computex taipei, 2023
 ![computex](fig/vvas_computex_2023.gif)
-
-# Report
-| Channel | Resolution | Decoder | Model | Average FPS |
-|:---:|:---:|:---:|:---:|:---:|
-|4|540p|H.264|YOLOv4-tiny|23|
-|4|720p|H.264|YOLOv4-tiny|21|
-|4|1080p|H.264|YOLOv4-tiny|17|
 
 # Reference
 

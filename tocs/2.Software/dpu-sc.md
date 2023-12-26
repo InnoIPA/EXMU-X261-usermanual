@@ -5,7 +5,6 @@
  https://opensource.org/licenses/MIT
 -->
 # TOC
-- [TOC](#toc)
 - [Overview](#overview)
 - [Download](#download)
 
