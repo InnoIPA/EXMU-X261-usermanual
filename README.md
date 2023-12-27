@@ -38,6 +38,7 @@ We have created this repository to provide a quick and easy way to get started w
     - [stesting-sc](./tocs/2.Software/stesting-sc.md)
     - [VVAS(Vitis Video Analytics SDK)](./tocs/2.Software/VVAS.md)
     - [OTA](./tocs/2.Software/OTA.md)
+  - [Benchmark](./tocs/6.Benchmark/benchmark.md)
   - [PoC](./tocs/3.POC/)
     - [VVAS Demo](./tocs/3.POC/VVAS-Demo.md)
     - [ANPR](./tocs/3.POC/ANPR.md)
