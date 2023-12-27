@@ -13,5 +13,5 @@
 
 # Download
 ```
-git clone https://github.com/aiotads/EXMU-X261-dpu-sc.git
+git clone https://github.com/InnoIPA/dpu-sc.git
 ```

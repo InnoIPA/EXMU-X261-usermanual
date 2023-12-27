@@ -6,7 +6,6 @@
 -->
 
 # TOC
-- [TOC](#toc)
 - [Overview](#overview)
 - [Choverlay](#choverlay)
 - [Chboot](#chboot)

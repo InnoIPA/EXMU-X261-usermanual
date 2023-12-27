@@ -6,7 +6,6 @@
 -->
 
 # TOC
-- [TOC](#toc)
 - [SOM Board Overview](#som-board-overview)
 - [Devices on SOM](#devices-on-som)
   - [QSPI Flash](#qspi-flash)

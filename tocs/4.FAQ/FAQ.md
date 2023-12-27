@@ -7,7 +7,6 @@
 
 
 # FAQ
-- [FAQ](#faq)
 - [What is BSP?](#what-is-bsp)
 - [How to flash eMMC on X261?](#how-to-flash-emmc-on-x261)
 - [How to update QSPI FW?](#how-to-update-qspi-fw)
@@ -19,6 +18,11 @@
 - [How to access USB?](#how-to-access-usb)
 - [How to use docker on EXMU-x261?](#how-to-use-docker-on-exmu-x261)
 - [Will the kernel be updated?](#will-the-kernel-be-updated)
+- [Pre-build image naming rule?](#pre-build-image-naming-rule)
+- [How to check if X261 is operating normally from the hardware?](#how-to-check-if-x261-is-operating-normally-from-the-hardware)
+- [How to check the xmodel information on X261?](#how-to-check-the-xmodel-information-on-x261)
+- [The accelerate application continuously fails to load ?](#the-accelerate-application-continuously-fails-to-load-)
+- [Why can't playing videos with gstreamer's MJPEG on X261 achieve the expected 30 FPS?](#why-cant-playing-videos-with-gstreamers-mjpeg-on-x261-achieve-the-expected-30-fps)
 
 # What is BSP?
 A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
@@ -52,22 +56,34 @@ Example of successfuly update qspifw.
     ![](doc/fig/../../fig/update_qspifw.gif)
 
 # How to use xmutil to check Accelerate Application is loaded?
-You can use `xmutil` to check the `listapps`. The active shows `1` means accelerate application is loaded.
+You can use `xmutil` to check the `listapps`. The active shows `0` means accelerate application is loaded.
 
 ```
 xmutil listapps
 ```
 
-<!-- ![load_dpu](./fig/load_dpu.png) -->
+![ckt_app_list](./fig/ckt_app.png)
 
-If the accelerate application not loaded. you can use `xmutil` to load accelerate application. And check the accelerate application list again.
+If the accelerate application not loaded. you can use `xmutil` to unload or load accelerate application. And check the accelerate application list again.
 
-<!-- ![unload_dpu](./fig/unload_dpu.png) -->
+- Unload APP
 
-```
-xmutil loadapp <accelerate application name>
-```
-<!-- ![load_sucess](./fig/load_sucess.png) -->
+    ```
+    xmutil unloadapp
+    ```
+
+    ![unload_app_list](./fig/unload_app.png)    
+
+- Load APP
+    ```
+    xmutil loadapp <accelerate application name>
+    ```
+    Example 
+
+    ```
+    xmutil loadapp app-x261-bsp
+    ```
+    ![load_sucess](./fig/load_app.png)
 
 
 # How to update the application on X261?
@@ -91,7 +107,7 @@ xdputil query
 
 The dpu-sc not preload in our system. If you need to check dpu-sc version, the version shows when running dpu-sc.
 
- ![dpu-sc](./fig/dpu-sc-version.png)
+ ![dpu-sc-version](./fig/dpu-sc-verion.png)
 
 For stesting version, stesting can't check version yet. Would be added in future version.
    
@@ -122,8 +138,36 @@ You can install docker on EXMU-X261 by following command and refer [kria-docker]
 # Will the kernel be updated?
 Our kernel cannot be updated. If any adjustments are needed, please contact us.
 
-# Pre-build image naming role?
-The following is pre-build image naming role.
+# Pre-build image naming rule?
+The following is pre-build image naming rule.
 ```
 <projectname>_<BSP Version>_<APP>_<pkg coded date>
 ```
+# How to check if X261 is operating normally from the hardware?
+Please check if all the lights is lighting in the bottom right corner of the carried board, as following picture.
+
+![light_lighting](./fig/lighting.png)
+
+# How to check the xmodel information on X261?
+Use the following command to check the fingerprint, input size, and architecture of the xmodel.
+
+```
+xdputil xmodel <xmodel> -l
+```
+
+Example
+```
+xdputil xmodel ppev3-yolov4-tiny-v25-416.xmodel -l
+```
+![xmodel_info](./fig/xmodel_info.png)
+
+# The accelerate application continuously fails to load ?
+Please follow the steps below for troubleshooting.
+1. Please completely power off the X261.
+2. Please detach the SOM board from the carried board.
+3. Reinstall the SOM board onto the carried board.
+
+Notice: Ensure the orientation of the SOM board and carried board is correct. Do not press hard, as it may cause permanent damage.
+
+# Why can't playing videos with gstreamer's MJPEG on X261 achieve the expected 30 FPS?
+This is because X261 does not provide an MJPEG decoder, hence the video goes into the processor for decoding. If needed, please use the H.264 provided on X261 for video decoding.
