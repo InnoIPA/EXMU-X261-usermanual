@@ -7,7 +7,9 @@
 
 
 # FAQ
+- [FAQ](#faq)
 - [What is BSP?](#what-is-bsp)
+- [Driver of debug board.](#driver-of-debug-board)
 - [How to flash eMMC on X261?](#how-to-flash-emmc-on-x261)
 - [How to update QSPI FW?](#how-to-update-qspi-fw)
 - [How to use xmutil to check Accelerate Application is loaded?](#how-to-use-xmutil-to-check-accelerate-application-is-loaded)
@@ -27,6 +29,9 @@
 # What is BSP?
 A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
 ![bsp-tree](./fig/bsp-tree.png)
+
+# Driver of debug board.
+Our [debug board](../1.Hardware/hardware.md) is using FT4232H chipset, the driver of could download from [FTDI official website](https://ftdichip.com/drivers/).
 
 # How to flash eMMC on X261?
 1. You need to prepare a MicroSD Card which can boot on X261, then use it to boot the system.  
