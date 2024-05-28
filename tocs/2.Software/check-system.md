@@ -13,9 +13,10 @@
 - [Check PL fucntion](#check-pl-fucntion)
 
 # Overview
+This page shows how to check whole system to make sure everything work properly.
 
 # Check power
-The 6 led on carrier board should be always on.
+The 6 led on carrier board should be always on, if so the system could be boot properly.
 ![](fig/check-system_led.jpg)
 
 # Check I/O fucntion
