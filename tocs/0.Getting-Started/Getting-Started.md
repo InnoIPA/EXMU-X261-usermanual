@@ -26,7 +26,7 @@
 - A MicroSD Card: Please prepare a microSD card of 16GB or more.  
 ![microsd-card](fig/microsd-card.jpg)
 ## Software
-**EXMU-X261 has preloaded image in eMMC during manufacturing.** Once you have access to the platform, you can start using it right away. On the other hand, you can use our pre-built image to intuitively experience the potency of employing AI solutions on the platform.(more detail in [Case-study](../5.Case-study/) topic). 
+**EXMU-X261 has preloaded image in eMMC during manufacturing.** Once you have access to the platform, you can start using it right away. On the other hand, you can use our pre-built image to intuitively experience the potency of employing AI solutions on the platform.(the image usage please refer to [2.Software/pre-build-image](../2.Software/pre-build-image.md)). 
 
 As mentioned above, if you decide to use our pre-built image. Please contact james_chen@innodisk.com. We will provide you with a [myinnodisk](https://myinnodisk.innodisk.com/myinnodisk/Login.aspx) account. Once inside, you will see as the following. And you can download the pre-built image you want.
  ![my-innodisk](fig/myinnodisk.png)
