@@ -15,7 +15,7 @@ doc | Update BSP v1.0.4 for A3 carrier board | 0.0.3 | Ju (hueiru_chen@innodisk.
 doc | 1. Modify release note to changelog <br/> 2. add case study section <br/> 3. Modify wording <br/> 4. add ANPR.md <br/> 5. Rearrange defect detection| 0.0.4 | AH (allen_huang@innodisk.com)
 doc | Add OTA.md <br/> Add utilities-intro.md <br/> Add some VVAS details <br/>  Hardware configuration reference diagram <br/>  Pre-build image intro and flashing details. <br/> | 0.0.5 | Billy (billy_chen@innodisk.com) <br/> Ju (hueiru_chen@innodisk.com) <br/> Jerry (jerry_hong@innodisk.com)
 doc | Correct typos <br/> Correct path errors <br/> Add some new FAQs <br/> Add benchmark <br/> | 0.0.6 | <br/> Ju (hueiru_chen@innodisk.com)<br/>AH (allen_huang@innodisk.com)
-
+doc | Add driver of debug board <br/> Add check system workflow <br/> Tidy pre-build image topic | 0.0.7 | <br/> Jerry (jerry_hong@innodisk.com) <br/> Ju (hueiru_chen@innodisk.com)
 
 # Dependencies Version
 

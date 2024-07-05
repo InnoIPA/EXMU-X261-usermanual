@@ -32,6 +32,8 @@ We have created this repository to provide a quick and easy way to get started w
 
 # Getting Started
  - [Installation and Setup](./tocs/0.Getting-Started/Getting-Started.md)
+    - [Pre-build image](./tocs/0.Getting-Started//pre-build-image.md)
+    - [Check system status SOP](./tocs/0.Getting-Started/check-system.md)
   - [Hardware](./tocs/1.Hardware/hardware.md)
   - [Software](./tocs/2.Software/)
     - [dpu-sc](./tocs/2.Software/dpu-sc.md)
