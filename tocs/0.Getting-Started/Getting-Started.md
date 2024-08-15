@@ -59,7 +59,7 @@ For some detail, please refer to [Xilinx Website](https://www.xilinx.com/product
 1. After the X261 boots up, will see a prompt to enter a username. The username for the X261 is **petalinux**
 2. Next, will see a prompt to enter a **new password**. Please set a new password, and be sure to store it for future use.
 
-> Refer to [check-system topic](./check-system.md) to troubleshoot boot problems.
+> Refer to [check-system](./check-system.md) topic to check the system status.
 
 
 # Next Steps
