@@ -18,10 +18,10 @@ The X261 currently supports two versions, EXMU-X261 and EXOU-X261. Please refer 
 
 Model |	P/N | Description | Packing List
 --- | --- | --- | ---
-EXMU-X261 | EXMU-X261-00A1-C1 | FPGA Machine Vision Solution Kit, 0~70°C | AMD Kria K26-C SOM x1EXMU-X261 Carrier Board x1Debug Board x1Custom USB Type C to Type C Cable x1USB Type A to Micro USB Cable x1Heatsink with Fan x1
-EXMU-X261	| EXMU-X261-00A1-W1	| FPGA Machine Vision Solution Kit, -40~85°C | AMD Kria K26-I SOM x1EXMU-X261 Carrier Board x1Debug Board x1Custom USB Type C to Type C Cable x1USB Type A to Micro USB Cable x1Heatsink with Fan x1
-EXOU-X261	| EXOU-X261-00A1-S1 | FPGA Machine Vision Box, 0~50°C | AMD Kria K26-C SOM x1EXOU-X261 Machine Vision Box x1Debug Board x1Custom USB Type C to Type C Cable x1USB Type A to Micro USB Cable x160W Power Adapter x1US Power Cord x1
-EXOU-X261	| EXOU-X261-00A1-E1 | FPGA Machine Vision Box, -30~70°C | AMD Kria K26-I SOM x1EXOU-X261 Machine Vision Box x1Debug Board x1Custom USB Type C to Type C Cable x1USB Type A to Micro USB Cable x160W Power Adapter x1US Power Cord x1
+EXMU-X261 | EXMU-X261-00A1-C1 | FPGA Machine Vision Solution Kit, 0~70°C | AMD Kria K26-C SOM x1 <br/>EXMU-X261 Carrier Board x1Debug Board x1 <br/>Custom USB Type C to Type C Cable x1USB Type A to Micro USB Cable x1 <br/>Heatsink with Fan x1
+EXMU-X261	| EXMU-X261-00A1-W1	| FPGA Machine Vision Solution Kit, -40~85°C | AMD Kria K26-I SOM x1 <br/>EXMU-X261 Carrier Board x1Debug Board x1 <br/>Custom USB Type C to Type C Cable x1 <br/>USB Type A to Micro USB Cable x1 <br/>Heatsink with Fan x1
+EXOU-X261	| EXOU-X261-00A1-S1 | FPGA Machine Vision Box, 0~50°C | AMD Kria K26-C SOM x1 <br/>EXOU-X261 Machine Vision Box x1 <br/>Debug Board x1 <br/>Custom USB Type C to Type C Cable x1 <br/>USB Type A to Micro USB Cable x1 <br/>60W Power Adapter x1US Power Cord x1
+EXOU-X261	| EXOU-X261-00A1-E1 | FPGA Machine Vision Box, -30~70°C | AMD Kria K26-I SOM x1 <br/>EXOU-X261 Machine Vision Box x1 <br/>Debug Board x1 <br/>Custom USB Type C to Type C Cable x1 <br/>USB Type A to Micro USB Cable x1 <br/>60W Power Adapter x1US Power Cord x1
 
 # What you will need
 ## Hardware
@@ -37,7 +37,7 @@ EXOU-X261	| EXOU-X261-00A1-E1 | FPGA Machine Vision Box, -30~70°C | AMD Kria K2
 ![power-supply](fig/power.png)
 
 ## Software
-**EXMU-X261 has preloaded an image in eMMC during manufacturing.** Once you have access to the platform, you can start using it right away.
+**X261 has preloaded an image in eMMC during manufacturing.** Once you have access to the platform, you can start using it right away.
 
 By default, the boot sequence is set to boot from the SD card then eMMC. Therefore, if no SD card is inserted, the X261 will automatically boot into the system stored in the eMMC. If needed to change the boot sequence, please refer to the [chboot tool](../2.Software/utilities-intro.md#chboot).
 
