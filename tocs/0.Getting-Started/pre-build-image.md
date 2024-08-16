@@ -13,7 +13,7 @@ If you decide to use our pre-built image. Please contact james_chen@innodisk.com
 
 Next, please prepare an SD card and follow the step to flash the pre-built image onto the SD card. [Setting up the SD Card Image](#setting-up-the-sd-card-image). 
 
-Final, following the step to boot the X261 for AI solution.
+Final, following the step to boot the device for AI solution.
 
 
 # Pre-build image
@@ -30,7 +30,7 @@ UVCCAM_122_VVAS_230808.gz | This is an object detection using the COCO dataset. 
 The pre-build image naming rule can refer [here]((../4.FAQ/FAQ.md#pre-build-image-naming-rule)).
 # Setting up the SD Card Image
 
-You will need a computer(host) to prepare the system for use on X261. Here we will introduce writing the system to the microSD card, and then no matter whether the operating system you are using is Windows or Linux, you can use the following flow normally.
+You will need a computer(host) to prepare the system for use on our FPGA device. Here we will introduce writing the system to the microSD card, and then no matter whether the operating system you are using is Windows or Linux, you can use the following flow normally.
 **Please prepare a microSD card of 16GB or more.** 
 
 1. Download the `pre-build image` (please contact james_chen@innodisk.com) to your computer.
@@ -46,10 +46,10 @@ You will need a computer(host) to prepare the system for use on X261. Here we wi
    ![balena-06](fig/balena-06.png)  
    1. Finally, please safely remove your SD card.  
 # Boot with pre-build image
-1. Please ensure that the X261 is powered off and the pre-built image and successfully flashed in the microSD card.How to flash the microSD card, please refer [Setting up the SD Card Image](#setting-up-the-sd-card-image)
-2. Insert the microSD card containing the X261 image in the microSD card slot.  
+1. Please ensure that the device is powered off and the pre-built image and successfully flashed in the microSD card.How to flash the microSD card, please refer [Setting up the SD Card Image](#setting-up-the-sd-card-image)
+2. Insert the microSD card containing the device image in the microSD card slot.  
 ![connect-01](fig/microsd-connect.png)  
-3. Prepare a keyboard and mouse, and connect the X261 with HDMI.
+3. Prepare a keyboard and mouse, and connect the device with HDMI.
 ![connect-x261](fig/connect-x261.png).   
 4. Connect power. Finally, system boot immediately after plugging in the power supply.
 ![connect-dc](fig/connect-dc.png)

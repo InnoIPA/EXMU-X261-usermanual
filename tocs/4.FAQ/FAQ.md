@@ -25,6 +25,7 @@
 - [How to check the xmodel information on X261?](#how-to-check-the-xmodel-information-on-x261)
 - [The accelerate application continuously fails to load ?](#the-accelerate-application-continuously-fails-to-load-)
 - [Why can't playing videos with gstreamer's MJPEG on X261 achieve the expected 30 FPS?](#why-cant-playing-videos-with-gstreamers-mjpeg-on-x261-achieve-the-expected-30-fps)
+- [How to reset the device password?](#how-to-reset-the-device-password)
 
 # What is BSP?
 A Board Support Package (BSP) is a collection of drivers customized to the provided hardware description, and it also contains a lot of source code(like Petalinux, Vitis and Vivado etc.). Our BSP structure like below:  
@@ -176,3 +177,10 @@ Notice: Ensure the orientation of the SOM board and carried board is correct. Do
 
 # Why can't playing videos with gstreamer's MJPEG on X261 achieve the expected 30 FPS?
 This is because X261 does not provide an MJPEG decoder, hence the video goes into the processor for decoding. If needed, please use the H.264 provided on X261 for video decoding.
+
+# How to reset the device password?
+Follow the following step to change the password.
+1. Set command `passwd`.
+2. Enter the current password.
+3. Enter the new password.
+4. Retype the new password.
