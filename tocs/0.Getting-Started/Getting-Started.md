@@ -53,7 +53,7 @@ By default, the boot sequence is set to boot from the SD card then eMMC. Therefo
 
 # Boot up the system
 1. After the system boots into the OS, you will see a prompt asking the user to enter a username. Please enter the default username: **petalinux**
-2. Next, will see a prompt to enter a **new password**. Please set a new password, and be sure to store it for future use. If you need to change the password, please refer the [How to reset the password](../4.FAQ/FAQ.md#how-to-reset-the-device-password)
+2. Next, will see a prompt to enter a **new password**. Please set a new password, and be sure to store it for future use. If you need to change the password, please refer the [How to reset the password?](../4.FAQ/FAQ.md#how-to-reset-the-device-password)
 
 > Refer to [check-system](./check-system.md) topic to check the system status.
 
