@@ -44,6 +44,8 @@ This page introduce the simple utilities on EXMU-X261 that enhance the user expe
 - Result:
 ![chboot](fig/chboot.png)
 
+> Note: Chboot is supported starting from our BSP version 1.2.3. Refer [FAQ](../4.FAQ/FAQ.md#how-to-check-the-version-on-exmu-x261) to check the BSP version.
+
 # FAQ
 - Why there are two verible with `chboot`?  
   The second verible is an optional verible. It is for preventing boot failed with default boot part, if failed system will boot from another boot part according to the second verible.
