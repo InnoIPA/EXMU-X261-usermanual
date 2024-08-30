@@ -16,6 +16,7 @@ doc | 1. Modify release note to changelog <br/> 2. add case study section <br/> 
 doc | Add OTA.md <br/> Add utilities-intro.md <br/> Add some VVAS details <br/>  Hardware configuration reference diagram <br/>  Pre-build image intro and flashing details. <br/> | 0.0.5 | Billy (billy_chen@innodisk.com) <br/> Ju (hueiru_chen@innodisk.com) <br/> Jerry (jerry_hong@innodisk.com)
 doc | Correct typos <br/> Correct path errors <br/> Add some new FAQs <br/> Add benchmark <br/> | 0.0.6 | <br/> Ju (hueiru_chen@innodisk.com)<br/>AH (allen_huang@innodisk.com)
 doc | Add driver of debug board <br/> Add check system workflow <br/> Tidy pre-build image topic | 0.0.7 | <br/> Jerry (jerry_hong@innodisk.com) <br/> Ju (hueiru_chen@innodisk.com)
+doc | Redefining the getting started section <br/> Modify the X261 table in summary topic. <br/> Modify the pre-build image topic <br/> Correct some picture error | 0.0.8 | <br/> Ju (hueiru_chen@innodisk.com)
 
 # Dependencies Version
 
